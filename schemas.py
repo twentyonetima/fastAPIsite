@@ -29,5 +29,10 @@ class Movie(BaseModel):
     description: str
     year: int
     country: str
-    genres: List[Genre]
+    genres: List[Genre] = []
     date: date
+    times: str
+
+
+class MovieOut(Movie):
+    id: int
